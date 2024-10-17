@@ -1,13 +1,10 @@
-// scripts.js
 
-// Inicializar AOS
 AOS.init({
     duration: 1000,
     easing: 'ease-in-out',
     once: true
 });
 
-// Script para el efecto de escritura
 const roleElement = document.getElementById("role");
 const roles = ["Desarrollador Web", "Ingeniero de Software"];
 let currentIndex = 0;
@@ -41,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
 });
 
-// Script para el desplazamiento suave en enlaces
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
