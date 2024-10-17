@@ -1,0 +1,124 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav a {
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+/* Estilos para los iconos de redes sociales en el header */
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #61dafb;
+}
+
+/* Estilos para el menú móvil */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    transition: color 0.3s;
+}
+
+.menu-toggle i {
+    font-size: 2rem;
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+    transform: scale(1);
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 1.5rem;
+}
+
+.mobile-menu ul li a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.mobile-menu ul li a:hover {
+    color: #61dafb;
+}
+
+/* Mostrar el botón de menú móvil solo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mostrar iconos de redes sociales solo en el menú móvil */
+    .social-icons {
+        display: none; /* Ocultar iconos en el header */
+    }
+}
+
+/* Mostrar los iconos de redes sociales solo en pantallas grandes */
+@media (min-width: 769px) {
+    .social-icons {
+        display: flex; /* Mostrar iconos en el header */
+    }
+
+    /* Ocultar botón de hamburguesa en pantallas grandes */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Ocultar el menú móvil en pantallas grandes */
+    .mobile-menu {
+        display: none;
+    }
+}
