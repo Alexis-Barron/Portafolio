@@ -5,6 +5,7 @@ AOS.init({
     once: true
 });
 
+
 const roleElement = document.getElementById("role");
 const roles = ["Desarrollador Web", "Ingeniero de Software"];
 let currentIndex = 0;

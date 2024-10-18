@@ -1,4 +1,5 @@
-emailjs.init('ESineu3vC8Gd-3plY');  
+emailjs.init('XwOWw-Na3FBorsrYo'); 
+
 
 const btn = document.getElementById('button');
 const successMessage = document.getElementById('success-message');
@@ -9,8 +10,9 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     btn.value = 'Enviando...';  
 
-    const serviceID = 'default_service'; 
-    const templateID = 'template_n5im9m9'; 
+  
+    const serviceID = 'service_biwyeod';
+    const templateID = 'template_zszsgbz';
 
 
     successMessage.classList.add('hidden');
